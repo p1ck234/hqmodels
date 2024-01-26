@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en" id="html">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>HQ Models</title>
+
+    <style>
+        .oh {
+            overflow: hidden;
+        }
+
+        .dn {
+            display: none;
+        }
+
+        .preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1999;
+            background: #fff;
+            -webkit-transition: all .6s ease 0s;
+            -moz-transition: all .6s ease 0s;
+            -o-transition: all .6s ease 0s;
+            transition: all .6s ease 0s;
+        }
+
+        .preloader.done {
+            opacity: 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css?ver=1.01">
+    <link rel="stylesheet" href="css/font-awesome.min.css?ver=1.01">
+    <link rel="stylesheet" href="css/animate.min.css?ver=1.01">
+    <link rel="stylesheet" href="css/main.css?ver=1.25">
+
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HQ Models">
+    <meta property="og:description" content="Хочешь зарабатывать деньги легко и интересно? Делай это с нами! :)">
+    <meta property="og:url" content="http://hqmodels.ru/">
+    <meta property="og:site_name" content="HQ Models">
+    <meta property="og:image" itemprop="image" content="http://hqmodels.ru/img/img10.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://hqmodels.ru/img/img10.jpg">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="&nbsp;">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="img/favicon/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="img/favicon/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="img/favicon/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png">
+
+</head>
+
+<body>
+
+    <div class="preloader" id="preloader"><noscript><span>Please enable JavaScript in your browser</span></noscript>
+    </div>
+
+    <script>
+        setTimeout(function () {
+            var preloader = document.getElementById("preloader");
+            var html = document.getElementById("html");
+            if (!preloader.classList.contains("done")) {
+                preloader.classList.add("done");
+                html.classList.remove("oh");
+                setTimeout(function () {
+                    preloader.classList.add("dn");
+                }, 300);
+            }
+        }
+            , 300);
+    </script>
+
+    
+    <div class="menu hidden-sm hidden-md hidden-lg">
+        <img src="img/logo.png" class="menu__logo visible-xs" alt="">
+        <a href="#about-us" class="menu__item scrollto">Кто мы</a>
+        <a href="#benefits" class="menu__item scrollto">Преимущества</a>
+        <a href="#conditions" class="menu__item scrollto">Условия</a>
+        <a href="#duties" class="menu__item scrollto">О работе</a>
+        <a href="#vacancies" class="menu__item menu--last scrollto">Вакансии</a>
+        
+    </div>
+    <a href="#" class="menu-btn">
+        <span class="menu-btn__line menu-btn--line1"></span>
+        <span class="menu-btn__line menu-btn--line2"></span>
+        <span class="menu-btn__line menu-btn--line3"></span>
+    </a>
+    <section class="intro scrollme animateme" data-when="span" data-from="0" data-to="1" data-opacity="0"
+        data-translatey="-500">
+        <div class="container intro__container">
+            <a href="#"><img src="img/logo.png" class="intro__logo" alt=""></a>
+
+            <div class="menu hidden-xs">
+                <img src="img/logo.png" class="menu__logo visible-xs" alt="">
+                <a href="#about-us" class="menu__item scrollto">Кто мы</a>
+                <a href="#benefits" class="menu__item scrollto">Преимущества</a>
+                <a href="#conditions" class="menu__item scrollto">Условия</a>
+                <a href="#duties" class="menu__item scrollto">О работе</a>
+                <a href="#vacancies" class="menu__item menu--last scrollto">Вакансии</a>
+                
+            </div>
+            <p class="intro__p">Хочешь зарабатывать деньги <span class="intro__span">легко</span> и <span
+                    class="oh"><span class="intro__span">интересно</span>?</span>
+            </p>
+            <p class="intro__p2 s2"><span class="c-fcd5ef">Д</span><span class="c-fbd6ee">е</span><span
+                    class="c-fbd7ed">л</span><span class="c-fad8ed">а</span><span class="c-fad9ec">й</span> <span
+                    class="c-f8daeb">э</span><span class="c-f7dbea">т</span><span class="c-f7dcea">о</span> <span
+                    class="c-f6dee8">с</span> <span class="c-f5dfe7">н</span><span class="c-f4e0e6">а</span><span
+                    class="c-f3e0e6">м</span><span class="c-f2e2e5">и</span><span class="c-f2e3e4">!</span> <span
+                    class="c-f1e4e4">:</span><span class="c-f1e5e3">)</span></p>
+            <p class="intro__p2 s1"><a href="#" class="btn intro__btn" data-toggle="modal"
+                    data-target="#modal"><span>Хочу! <i class="fa fa-arrow-circle-right"
+                            aria-hidden="true"></i></span></a></p>
+        </div>
+        <a href="#about-us" class="intro__scroll-down scrollto"><i class="fa fa-angle-double-down intro__ico"
+                aria-hidden="true"></i></a>
+        <div class="intro__gradient"></div>
+    </section>
+
+    <section class="about-us" id="about-us">
+        <div class="about-us__line"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 about-us__col-left">
+                    <h2 class="about-us__h2"><span class="c-fd86b0">К</span><span class="c-fd94cd">т</span><span
+                            class="c-fca1e5">о</span> <span class="c-f1acee">м</span><span
+                            class="c-daafdd">ы</span><span class="c-cbb0cd hidden-md">?</span></h2>
+                    <p class="about-us__p">Мы — перфекционисты, и с каждым днем становимся только круче</p>
+                    <ul class="about-us__ul">
+                        <li>Эта работа для тех, у кого есть цель!</li>
+                        <li class="s1">Кто хочет большего!</li>
+                        <li class="s2">Кто не останавливается на достигнутом!</li>
+                    </ul>
+                    <p class="about-us__p2 s3">Стань частью нашей команды!</p>
+                    <p class="about-us__p3 s3">Новая жизнь начинается здесь и сейчас!</p>
+                </div>
+                <div class="col-lg-5 col-md-6 about-us__col-right">
+                    <div class="about-us__item">
+                        <div class="about-us__img"><img src="img/img2b.png" class="about-us__ico1" alt=""></div>
+                        <div class="oh">
+                            <h3 class="about-us__h3"><span class="about-us__span">Мы</span> надежные!</h3>
+                            <p class="about-us__p4">Мы всегда отвечаем за свои слова и за вас! Поэтому никогда не
+                                задерживаем зарплату!</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="about-us__item about-us--shift">
+                        <div class="about-us__img about-us--alt"><img src="img/img3b.png" class="about-us__ico2" alt="">
+                        </div>
+                        <div class="oh">
+                            <h3 class="about-us__h3"><span class="about-us__span">Мы</span> большие!</h3>
+                            <p class="about-us__p4">Мы открыты с 2009 года, у нас есть филиалы во многих городах!
+                                Саратов, Энгельс, Пенза, Санкт-Петербург, Самара, Волгоград</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="about-us__item mb0">
+                        <div class="about-us__img about-us--alt"><img src="img/img4b.png" class="about-us__ico3" alt="">
+                        </div>
+                        <div class="oh">
+                            <h3 class="about-us__h3"><span class="about-us__span">Мы</span> любим вас!</h3>
+                            <p class="about-us__p4">Мы действительно любим наших сотрудников и хотим, сделать вашу жизнь
+                                и вас лучше!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+        <div class="benefits__line"></div>
+        <div class="benefits__block scrollme animateme" data-when="enter" data-from="1" data-to="0" data-opacity="0"
+            data-translatex="500"></div>
+        <div class="container">
+            <h2 class="benefits__h2"><span class="c-fffad2">Э</span><span class="c-fff9dc">т</span><span
+                    class="c-fff7e6">о</span> <span class="c-fff5f2">н</span><span class="c-fff4f9">а</span><span
+                    class="c-fef4fc">д</span><span class="c-fcf4fc">е</span><span class="c-f7f6fc">ж</span><span
+                    class="c-f2f7fb">н</span><span class="c-edf9f7">о</span><span class="c-e9fbf5">,</span><br> <span
+                    class="benefits__span"><span class="c-fffbcf">в</span><span class="c-fffad3">ы</span><span
+                        class="c-fffad5">г</span><span class="c-fff9d9">о</span><span class="c-fff8dc">д</span><span
+                        class="c-fff8df">н</span><span class="c-fff7e3">о</span> <span class="c-fff7e7">и</span> <span
+                        class="c-fff6eb">и</span><span class="c-fff6ee">н</span><span class="c-fff5f1">т</span><span
+                        class="c-fff5f3">е</span><span class="c-fff5f4">р</span><span class="c-fff4f7">е</span><span
+                        class="c-fff4f8">с</span><span class="c-fff4fa">н</span><span class="c-fff4fb">о</span><span
+                        class="c-fff4fc">!</span></span></h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="benefits__wrap">
+                        <div class="benefits__item">
+                            <div class="benefits__col-left">
+                                <div class="benefits__img benefits--img1"><img src="img/img5b.jpg"
+                                        class="img-responsive" alt=""></div>
+                            </div>
+                            <div class="benefits__text">
+                                <h3 class="benefits__h3">Зарабатывай!</h3>
+                                <p class="benefits__p">Средняя ЗП на время обучения <span class="b">30 000 <i
+                                            class="fa fa-rub" aria-hidden="true"></i> — 50 000 <i class="fa fa-rub"
+                                            aria-hidden="true"></i></span> с первого дня! И это не предел! Поднимай свой
+                                    рейтинг и зарабатывай
+                                    более <span class="b">100 000 <i class="fa fa-rub" aria-hidden="true"></i></span>.
+                                    <span class="b">Деньги идут к тому, кто им рад!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="benefits__wrap">
+                        <div class="benefits__item benefits--alt">
+                            <div class="benefits__col-left">
+                                <div class="benefits__img benefits--img2"><img src="img/img6b.jpg"
+                                        class="img-responsive" alt=""></div>
+                            </div>
+                            <div class="benefits__text">
+                                <h3 class="benefits__h3">Развивайся!</h3>
+                                <p class="benefits__p">У нас проходит бесплатное обучение сотрудников! Посещай курсы
+                                    иностранных языков, психологии и актерского мастерства! <span class="b">Мы знаем,
+                                        как зарабатывать, научим и тебя!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="benefits__wrap">
+                        <div class="benefits__item benefits--alt benefits--adapt1">
+                            <div class="benefits__col-left">
+                                <div class="benefits__img benefits--img3"><img src="img/img7b.jpg"
+                                        class="img-responsive" alt=""></div>
+                            </div>
+                            <div class="benefits__text">
+                                <h3 class="benefits__h3">Расцветай!</h3>
+                                <p class="benefits__p">Участвуй в крутых фотопроектах у лучших фотографов страны! <span
+                                        class="b">Сделай жизнь ярче! Будь свободной! Будь собой!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="benefits__wrap">
+                        <div class="benefits__item benefits--adapt2">
+                            <div class="benefits__col-left">
+                                <div class="benefits__img benefits--img4"><img src="img/img8b.jpg"
+                                        class="img-responsive" alt=""></div>
+                            </div>
+                            <div class="benefits__text">
+                                <h3 class="benefits__h3">Путешествуй!</h3>
+                                <p class="benefits__p">Участвуй в наших конкурсах и выигрывай путешествия, сертификаты
+                                    на одежду и косметику! Сотрудники уже посетили Чехию, Францию, Англию, Испанию,
+                                    Доминикану, Мексику и т.д.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="benefits__p2"><span class="c-e2abdb">К</span><span class="c-e5abdc">р</span><span
+                    class="c-e7abde">у</span><span class="c-e9abdf">т</span><span class="c-ebabe0">о</span><span
+                    class="c-efaae1">?</span> <span class="c-f6a8e1">Э</span><span class="c-f8a6e1">т</span><span
+                    class="c-f9a5e1">о</span> <span class="c-fba2e1">т</span><span class="c-fca0e0">о</span><span
+                    class="c-fd9cde">л</span><span class="c-fd9adc">ь</span><span class="c-fe96da">к</span><span
+                    class="c-fe92d8">о</span> <span class="c-ff8bd3">н</span><span class="c-ff84ce">а</span><span
+                    class="c-ff81cc">ч</span><span class="c-ff7cc8">а</span><span class="c-ff77c5">л</span><span
+                    class="c-ff72c1">о</span><span class="c-ff6ebe">!</span></p>
+        </div>
+    </section>
+
+    <section class="conditions" id="conditions">
+        <div class="conditions__line"></div>
+        <div class="container">
+            <h2 class="conditions__h2"><span class="c-e4c4d0">У</span><span class="c-e4c7d7">с</span><span
+                    class="c-e3cadd">л</span><span class="c-e2cce0">о</span><span class="c-dfcddf">в</span><span
+                    class="c-dacedb">и</span><span class="c-d6ced6">я</span></h2>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="conditions__item">
+                        <div class="conditions__num">1</div>
+                        <div class="oh">
+                            <h3 class="conditions__h3">Высокая зарплата</h3>
+                            <p class="conditions__p">позволяющая исполнять самые смелые мечты. Зарабатывать вы начинаете
+                                с первого рабочего дня!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="conditions__item s1">
+                        <div class="conditions__num">2</div>
+                        <div class="oh">
+                            <h3 class="conditions__h3">Не надо бросать учебу!</h3>
+                            <p class="conditions__p">Можете совмещать с работой и привычными занятиями! Начинайте
+                                параллельно! График работы подстраивается под вашу жизнь.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm visible-xs"></div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="conditions__item">
+                        <div class="conditions__num">3</div>
+                        <div class="oh">
+                            <h3 class="conditions__h3">Уникальная система работы</h3>
+                            <p class="conditions__p">Каждый сотрудник, выполняющий все наши рекомендации начинает
+                                зарабатывать все больше и больше!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-lg"></div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="conditions__item s1">
+                        <div class="conditions__num">4</div>
+                        <div class="oh">
+                            <h3 class="conditions__h3">Мы обспечиваем</h3>
+                            <p class="conditions__p">абсолютно всем необходимым для работы и выбираем самое лучшее <span
+                                    class="conditions__span">(Работа в студиях с красивым дизайнерским ремонтом, уютной
+                                    атмосферой и дорогим оборудованием)</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm visible-xs"></div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="conditions__item">
+                        <div class="conditions__num">5</div>
+                        <div class="oh">
+                            <h3 class="conditions__h3">Весомые премии</h3>
+                            <p class="conditions__p">за привлечение новых сотрудников. Подарки лучшим сотрудникам,
+                                бонусы, конкурсы с шикарными призами от путешествий до сертификатов на косметику.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="conditions__item s1 conditions--last">
+                        <div class="conditions__num">6</div>
+                        <div class="oh">
+                            <h3 class="conditions__h3">А еще у нас есть<br> печеньки :)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="scrollme" id="duties">
+        <div class="duties animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0"
+            data-translatey="600">
+            <div class="duties__line"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="duties__h2">Что<br class="hidden-sm hidden-xs"> нужно<br class="hidden-sm hidden-xs">
+                            <span class="duties__span">делать?</span></h2>
+
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="duties__ul">
+                            <li>Зарабатывать, общаясь в Интернете на темы, интересные тебе</li>
+                            <li>Поддерживать грустных, радоваться за счастливых, дарить улыбки и душевное тепло людям
+                            </li>
+                            <li>Развивать свой уровень английского, даже если он нулевой — это не проблема</li>
+                            <li>Записаться на собеседование и узнать подробнее</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vacancies" id="vacancies">
+        <div class="vacancies__line"></div>
+        <div class="vacancies__circle1"></div>
+        <div class="vacancies__circle2"></div>
+        <div class="vacancies__circle3"></div>
+        <div class="vacancies__circle4"></div>
+        <div class="container">
+            <h2 class="vacancies__h2"><span class="c-ff869d">В</span><span class="c-ff93b7">а</span><span
+                    class="c-ff9bc9">к</span><span class="c-fda6da">а</span><span class="c-f6acdf">н</span><span
+                    class="c-ebb0d9">с</span><span class="c-deb2cf">и</span><span class="c-cdb3bf">и</span></h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="vacancies__wrap">
+                        <div class="vacancies__item vacancies--alt2" data-toggle="modal" data-target="#modal"
+                            id="model">
+                            <div class="vacancies__img vacancies--img1 visible-xs"></div>
+                            <div class="row">
+                                <div class="col-lg-7 col-sm-8 vacancies__col-left">
+                                    <h3 class="vacancies__h3">Модель видеочата</h3>
+                                    <p class="vacancies__p"><span class="bb">Приметы:</span> <br class="hidden-xs">Милая
+                                        девушка от 18 до 35 лет. Позитивный нрав, дикое желание зарабатывать</p>
+                                    <p class="vacancies__p mb0"><span class="bb">Миссия:</span> <br
+                                            class="hidden-xs">Дарить улыбки пользователям чата, поддерживать диалоги,
+                                        рассказывать всякие интересности, слушаться менеджера, зарабатывать много
+                                        денежек, легко совмещая с учебой или другой работой.</p>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 vacancies__col-right">
+                                    <div class="oh">
+                                        <div class="vacancies__img vacancies--img1 hidden-xs"></div>
+                                        
+                                        <div class="vacancies__gradient">
+                                            <p class="vacancies__reward">От <span class="bb">60 000 <i class="fa fa-rub"
+                                                        aria-hidden="true"></i></span><br class="hidden-xs"> До <span
+                                                    class="bb">120 000 <i class="fa fa-rub"
+                                                        aria-hidden="true"></i></span><br>
+                                                <span class="vacancies__month hidden-xs">в месяц</span></p>
+                                            <p class="vacancies__remark hidden-xs">P.S. Это средняя ЗП.<br> Смекаете, о
+                                                чем мы? :)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="vacancies__wrap s1">
+                        <div class="vacancies__item vacancies--alt1" data-toggle="modal" data-target="#modal"
+                            id="operator">
+                            <div class="vacancies__img vacancies--img2 visible-xs"></div>
+                            <div class="row">
+                                <div class="col-lg-7 col-sm-8 vacancies__col-left">
+                                    <h3 class="vacancies__h3">Оператор спам-отдела</h3>
+                                    <p class="vacancies__p"><span class="bb">Приметы:</span> <br
+                                            class="hidden-xs">Человек, для которого соцсети почти, как второй дом.</p>
+                                    <p class="vacancies__p mb0"><span class="bb">Миссия:</span> <br
+                                            class="hidden-xs">Сидеть в офисе, рассылать сообщения, рекламу через
+                                        определенные интернет-ресурсы.</p>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 vacancies__col-right">
+                                    <div class="oh">
+                                        <div class="vacancies__img vacancies--img2 hidden-xs"></div>
+                                        
+                                        <div class="vacancies__gradient">
+                                            <p class="vacancies__reward">От <span class="bb">25 000 <i class="fa fa-rub"
+                                                        aria-hidden="true"></i></span><br class="hidden-xs"> До <span
+                                                    class="bb">35 000 <i class="fa fa-rub"
+                                                        aria-hidden="true"></i></span><br>
+                                                <span class="vacancies__month hidden-xs">в месяц</span></p>
+                                            <p class="vacancies__remark hidden-xs">Работа непыльная, несложная и хорошо
+                                                оплачиваемая</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="vacancies__wrap s1">
+                        <div class="vacancies__item vacancies--alt1 vacancies--adapt1" data-toggle="modal"
+                            data-target="#modal" id="agent">
+                            <div class="vacancies__img vacancies--img3 visible-xs"></div>
+                            <div class="row">
+                                <div class="col-lg-7 col-sm-8 vacancies__col-left">
+                                    <h3 class="vacancies__h3">Агент по набору персонала</h3>
+                                    <p class="vacancies__p"><span class="i">Почти как агент 007, только круче.</span>
+                                    </p>
+                                    <p class="vacancies__p"><span class="bb">Приметы:</span> <br
+                                            class="hidden-xs">Обаятельная, вежливая девушка в возрасте от 22 до 35 лет.
+                                    </p>
+                                    <p class="vacancies__p mb0"><span class="bb">Миссия:</span> <br
+                                            class="hidden-xs">Находить людей, которые хотят разбогатеть , проводить с
+                                        ними встречи, рассказывать в чем суть.</p>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 vacancies__col-right">
+                                    <div class="oh">
+                                        <div class="vacancies__img vacancies--img3 hidden-xs"></div>
+                                        
+                                        <div class="vacancies__gradient">
+                                            <p class="vacancies__reward">От <span class="bb">50 000 <i class="fa fa-rub"
+                                                        aria-hidden="true"></i></span><br class="hidden-xs"> До <span
+                                                    class="bb">80 000 <i class="fa fa-rub"
+                                                        aria-hidden="true"></i></span><br>
+                                                <span class="vacancies__month hidden-xs">в месяц</span></p>
+                                            <p class="vacancies__remark hidden-xs">ЗП напрямую зависит от количества
+                                                приведенных<br> в команду сотрудников</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="vacancies__wrap">
+                        <div class="vacancies__item vacancies--adapt2" data-toggle="modal" data-target="#modal"
+                            id="manager">
+                            <div class="vacancies__img vacancies--img4 visible-xs"></div>
+                            <div class="row">
+                                <div class="col-lg-7 col-sm-8 vacancies__col-left">
+                                    <h3 class="vacancies__h3">Менеджер студии</h3>
+                                    <p class="vacancies__p"><span class="bb">Приметы:</span> <br
+                                            class="hidden-xs">Сенсей в юбке. От 22 до 35 лет. Ответственная,
+                                        легкообучаемая, пунктуальная девушка с явными лидерскими качествами.</p>
+                                    <p class="vacancies__p mb0"><span class="bb">Миссия:</span> <br
+                                            class="hidden-xs">Обучать, контролировать работу студии, ругать хулиганок,
+                                        хвалить умниц. Работа требует большого количества времени, повышенной
+                                        ответсвенности и стрессоустойчивости.</p>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 vacancies__col-right">
+                                    <div class="oh">
+                                        <div class="vacancies__img vacancies--img4 hidden-xs"></div>
+                                        
+                                        <div class="vacancies__gradient">
+                                            <p class="vacancies__reward">От <span class="bb">60 000 <i class="fa fa-rub"
+                                                        aria-hidden="true"></i></span><br class="hidden-xs"> До <span
+                                                    class="bb">120 000 <i class="fa fa-rub"
+                                                        aria-hidden="true"></i></span><br>
+                                                <span class="vacancies__month hidden-xs">в месяц</span></p>
+                                            <p class="vacancies__remark hidden-xs">P.S. Это средняя ЗП.<br> Намёк
+                                                понятен? :)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__circle3 hidden-md hidden-sm hidden-xs"></div>
+        <div class="footer__circle4 hidden-md hidden-sm hidden-xs"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 footer__col-left">
+                    <div class="footer__logo2 visible-md visible-sm visible-xs"><img src="img/logo3.png"
+                            class="footer__img" alt="">Models</div>
+                    
+                </div>
+                <div class="col-lg-4 footer__col-center">
+                    <div class="footer__circle3 hidden-lg"></div>
+                    <div class="footer__circle4 hidden-lg"></div>
+                    <div class="footer__circle">
+                        <div class="footer__circle2">
+                            <img src="img/logo2.png" class="footer__logo" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 footer__col-right">
+                    <div class="footer__logo2 hidden-md hidden-sm hidden-xs"><img src="img/logo3.png"
+                            class="footer__img" alt="">Models</div>
+                    <a href="#about-us" class="footer__link scrollto">Кто мы?</a>
+                    <a href="#benefits" class="footer__link scrollto footer--long">Преимущества</a>
+                    <a href="#conditions" class="footer__link scrollto">Условия</a>
+                    <a href="#duties" class="footer__link scrollto">О работе</a>
+                    <a href="#vacancies" class="footer__link scrollto footer--long2">Вакансии</a>
+                    <p class="footer__copyright">© 2020 hqmodels.com - All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="js/jquery.min.js?ver=1.01"></script>
+    <script src="js/bootstrap.min.js?ver=1.01"></script>
+    <script src="js/jquery.scrollme.min.js?ver=1.01"></script>
+    <script src="js/jquery.appear.min.js?ver=1.01"></script>
+    <script src="js/main.js?ver=1.01"></script>
+    <script src="//code-ya.jivosite.com/widget/L0hxNO8lci" async></script>
+</body>
+
+</html>
