@@ -156,8 +156,8 @@ svg.onmousemove = function (e) {
     info.innerHTML = e.target.getAttribute("title");
   });
 
-  info.style.left = e.pageX - 500 + "px";
-  info.style.top = e.pageY - 1300 + "px";
+  info.style.left = e.pageX - 100 + "px";
+  info.style.top = e.pageY - 1350 + "px";
 };
 
 svg.onmouseout = function () {
