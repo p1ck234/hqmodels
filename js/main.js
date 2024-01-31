@@ -109,23 +109,23 @@ setTimeout(function() {
         force_process: true
     });
 
-    $(".conditions__item").addClass("o0");
-    $(document.body).on('appear', '.conditions__item', function(e, $affected) {
-        $(this).addClass("animated fadeIn");
-        $(this).removeClass("o0");
-    });
-    $('.conditions__item').appear({
-        force_process: true
-    });
+    // $(".conditions__item").addClass("o0");
+    // $(document.body).on('appear', '.conditions__item', function(e, $affected) {
+    //     $(this).addClass("animated fadeIn");
+    //     $(this).removeClass("o0");
+    // });
+    // $('.conditions__item').appear({
+    //     force_process: true
+    // });
 
-    $(".vacancies__wrap").addClass("o0");
-    $(document.body).on('appear', '.vacancies__wrap', function(e, $affected) {
-        $(this).addClass("animated bounceIn");
-        $(this).removeClass("o0");
-    });
-    $('.vacancies__wrap').appear({
-        force_process: true
-    });
+    // $(".vacancies__wrap").addClass("o0");
+    // $(document.body).on('appear', '.vacancies__wrap', function(e, $affected) {
+    //     $(this).addClass("animated bounceIn");
+    //     $(this).removeClass("o0");
+    // });
+    // $('.vacancies__wrap').appear({
+    //     force_process: true
+    // });
 
 }, 300);
 
