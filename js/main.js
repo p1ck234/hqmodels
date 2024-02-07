@@ -144,22 +144,44 @@ $("#mainForm").submit(function () {
   });
   return false;
 });
-const svg = document.getElementById("svg-map");
-const info = document.querySelector(".info");
-const child = document.querySelectorAll("#svg-map path");
+// const svg = document.getElementById("svg-map");
+// const info = document.querySelector(".info");
+// const child = document.querySelectorAll("#svg-map path");
 
-svg.onmousemove = function (e) {
-  e = window.event;
+// svg.onmousemove = function (e) {
+//   e = window.event;
 
-  child.forEach(function (el) {
-    info.style.opacity = 1;
-    info.innerHTML = e.target.getAttribute("title");
+//   child.forEach(function (el) {
+//     info.style.opacity = 1;
+//     info.innerHTML = e.target.getAttribute("title");
+//   });
+
+//   info.style.left = e.pageX - 100 + "px";
+//   info.style.top = e.pageY - 1350 + "px";
+// };
+
+// svg.onmouseout = function () {
+//   info.style.opacity = "0";
+// };
+
+document.addEventListener("DOMContentLoaded", function () {
+  const activeRegions = document.querySelectorAll(".active-region");
+  const tooltip = document.getElementById("tooltip");
+
+  activeRegions.forEach((region) => {
+    region.addEventListener("mouseover", function (event) {
+      const { x, y, width, height } = region.getBBox(); // Получаем координаты и размеры элемента
+      const tooltipX = x + width + 5;
+      const tooltipY = y + 70;
+      tooltip.innerHTML = event.target.getAttribute("title");
+      tooltip.style.left = `${tooltipX}px`;
+      tooltip.style.top = `${tooltipY}px`;
+
+      tooltip.classList.add("active");
+    });
+
+    region.addEventListener("mouseout", function () {
+      tooltip.classList.remove("active");
+    });
   });
-
-  info.style.left = e.pageX - 100 + "px";
-  info.style.top = e.pageY - 1350 + "px";
-};
-
-svg.onmouseout = function () {
-  info.style.opacity = "0";
-};
+});

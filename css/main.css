@@ -443,9 +443,26 @@ svg {
 }
 
 .active-region {
-  fill: #F8C4A5;
+  fill: #f8c4a5;
+}
+#tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
+#tooltip.active {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
 path:hover {
   fill: #ff57ae;
 }
