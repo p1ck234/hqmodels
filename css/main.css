@@ -439,15 +439,15 @@ a {
   padding-top: 10px;
 }
 svg {
-  fill: #222;
+  fill: #daafdd;
 }
 
 .active-region {
-  fill: #b7b7b7;
+  fill: #F8C4A5;
 }
 
 path:hover {
-  fill: #333;
+  fill: #ff57ae;
 }
 
 .info {
