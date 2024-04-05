@@ -1,5 +1,5 @@
 <?php
-        $to = 'job@hqmodels.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
+        $to = 'job@hqmodels.studio'; //Почта получателя, через запятую можно указать сколько угодно адресов
         $subject = '[Заявка]'; //Загаловок сообщения
         $message = '
                 <html>
@@ -15,6 +15,6 @@
                     </body>
                 </html>'; //Текст нащего сообщения можно использовать HTML теги
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-        $headers .= "From: hqmodels.ru\r\n"; //Наименование и почта отправителя
+        $headers .= "From: hqmodels.studio\r\n"; //Наименование и почта отправителя
         mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
 ?>
