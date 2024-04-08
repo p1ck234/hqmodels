@@ -3232,6 +3232,9 @@ path:hover {
   }
 }
 @media screen and (max-width: 1300px) {
+  .cards {
+    padding: 100px 400px 100px 100px;
+  }
   .vacancies__btn {
     font-size: 19px;
   }
@@ -3258,6 +3261,9 @@ path:hover {
   }
 }
 @media screen and (max-width: 1199px) {
+  .cards_second {
+    display: none;
+  }
   .vacancies__reward {
     font-size: 31px;
     line-height: 36px;
@@ -3570,6 +3576,9 @@ path:hover {
   .benefits__img {
     height: 290px;
   }
+  .cards_second {
+    display: none;
+  }
 }
 @media screen and (max-width: 991px) {
   .about-us__line,
@@ -3678,6 +3687,9 @@ path:hover {
   }
 }
 @media screen and (max-width: 767px) {
+  .vacancies__feedback {
+    display: none;
+  }
   .vacancies__btn {
     font-size: 22.8px;
     height: 104px;
@@ -3994,6 +4006,9 @@ path:hover {
     height: 80px;
   }
   #svg-map {
+    display: none;
+  }
+  .vacancies__feedback {
     display: none;
   }
 }
@@ -4422,6 +4437,9 @@ path:hover {
     font-size: 38px;
   }
   #svg-map {
+    display: none;
+  }
+  #feedback {
     display: none;
   }
 }
