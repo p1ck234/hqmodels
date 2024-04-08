@@ -41,19 +41,19 @@ $(".menu__item, .menu__request-btn").click(function () {
 });
 
 $("#model").click(function () {
-  $("#vacancy").val("model");
+  $("#vacancy").val("модель");
 });
 
 $("#operator").click(function () {
-  $("#vacancy").val("operator");
+  $("#vacancy").val("спамер");
 });
 
 $("#agent").click(function () {
-  $("#vacancy").val("agent");
+  $("#vacancy").val("набор персонала");
 });
 
 $("#manager").click(function () {
-  $("#vacancy").val("manager");
+  $("#vacancy").val("менеджер");
 });
 
 $(window).scroll(function () {
