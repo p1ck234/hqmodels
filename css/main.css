@@ -888,7 +888,7 @@ path:hover {
   position: relative;
 
   list-style-type: none;
-  padding: 100px;
+  padding: 100px 500px 100px 100px;
   max-width: 34em;
   margin: 20% auto 0;
 }
@@ -915,6 +915,10 @@ path:hover {
   :last-child {
     margin-bottom: 0;
   }
+}
+
+.card__box {
+  display: flex;
 }
 
 .card--next {
