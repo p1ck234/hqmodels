@@ -194,20 +194,16 @@ $.fn.commentCards = function () {
       $next;
 
     $cards.on("click", function () {
-      if (!$current.is(this)) {
+      var $clickedCard = $(this);
+      if (!$clickedCard.hasClass("card--current")) {
         $cards.removeClass("card--current card--out card--next");
         $current.addClass("card--out");
-        $current = $(this).addClass("card--current");
+        $current = $clickedCard.addClass("card--current");
         $next = $current.next();
         $next = $next.length ? $next : $cards.first();
         $next.addClass("card--next");
       }
     });
-
-    if (!$current.length) {
-      $current = $cards.last();
-      $cards.first().trigger("click");
-    }
 
     $this.addClass("cards--active");
   });
