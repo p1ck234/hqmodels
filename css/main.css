@@ -886,11 +886,14 @@ path:hover {
 
 .cards {
   position: relative;
-
   list-style-type: none;
-  padding: 1000px 500px 100px 100px;
+  padding: 300px 300px 300px 500px;
   max-width: 34em;
   margin: 20% auto 0;
+}
+
+.card__first {
+  padding: 100px 300px 100px 500px;
 }
 
 .card {
@@ -918,7 +921,7 @@ path:hover {
 }
 
 .card__box {
-  display: flex;
+  /* display: flex; */
 }
 
 .card--next {
@@ -3277,8 +3280,11 @@ path:hover {
   }
 }
 @media screen and (max-width: 1300px) {
+  .cards_second {
+    display: none;
+  }
   .cards {
-    padding: 100px 400px 100px 100px;
+    padding: 200px 100px 100px 500px;
   }
   .vacancies__btn {
     font-size: 19px;
@@ -3308,6 +3314,9 @@ path:hover {
 @media screen and (max-width: 1199px) {
   .cards_second {
     display: none;
+  }
+  .card__first {
+    padding: 200px 100px 100px 500px;
   }
   .vacancies__reward {
     font-size: 31px;
@@ -3618,6 +3627,13 @@ path:hover {
   }
 }
 @media screen and (max-width: 1100px) {
+  .cards__second {
+    display: none;
+  }
+  .card__first {
+    margin-top: 200px;
+    padding: 100px 100px 200px 500px;
+  }
   .benefits__img {
     height: 290px;
   }
