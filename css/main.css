@@ -883,6 +883,86 @@ path:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.cards {
+  position: relative;
+  list-style-type: none;
+  padding: 300px 300px 300px 500px;
+  max-width: 34em;
+  margin: 20% auto 0;
+}
+
+.card__first {
+  padding: 100px 300px 100px 500px;
+}
+
+.card {
+  position: absolute;
+  top: -180px;
+  left: 0;
+  z-index: 2;
+
+  background: #f97cac;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 0 20px #828282;
+  transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
+  transform-origin: 0 0;
+
+  transition: transform 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8) 0.1s,
+    background 0.4s linear;
+
+  cursor: pointer;
+  user-select: none;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card__box {
+  /* display: flex; */
+}
+
+.card--next {
+  z-index: 5;
+  transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
+  background: #ff73a8;
+}
+
+.card--out {
+  animation: card-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
+  transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+  z-index: 1;
+  background: #ff73a8;
+}
+
+@keyframes card-out {
+  0% {
+    z-index: 20;
+    transform: translateY(0px) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-120%) rotate(-5deg) translateX(-40px);
+  }
+  80% {
+    z-index: 1;
+  }
+  100% {
+    transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+  }
+}
+
+.card--current {
+  cursor: auto;
+  user-select: auto;
+  /* position: relative; */
+  z-index: 10;
+  opacity: 1;
+  background: #fdd3eb;
+  transform: rotate(-1deg) translateX(0%) scale(1);
+}
+
 .conditions__line {
   background: #d9d9d9;
   width: 155px;
@@ -2046,6 +2126,51 @@ path:hover {
   top: 561px;
   opacity: 0.2;
 }
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #ff73a8;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  font-size: 2.5rem;
+  min-height: 4.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  font-size: 1.7rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
 .footer {
   background: #fdd2eb;
   padding-top: 110px;
@@ -3155,6 +3280,12 @@ path:hover {
   }
 }
 @media screen and (max-width: 1300px) {
+  .cards_second {
+    display: none;
+  }
+  .cards {
+    padding: 200px 100px 100px 500px;
+  }
   .vacancies__btn {
     font-size: 19px;
   }
@@ -3181,6 +3312,12 @@ path:hover {
   }
 }
 @media screen and (max-width: 1199px) {
+  .cards_second {
+    display: none;
+  }
+  .card__first {
+    padding: 200px 100px 100px 500px;
+  }
   .vacancies__reward {
     font-size: 31px;
     line-height: 36px;
@@ -3490,8 +3627,18 @@ path:hover {
   }
 }
 @media screen and (max-width: 1100px) {
+  .cards__second {
+    display: none;
+  }
+  .card__first {
+    margin-top: 200px;
+    padding: 100px 100px 200px 500px;
+  }
   .benefits__img {
     height: 290px;
+  }
+  .cards_second {
+    display: none;
   }
 }
 @media screen and (max-width: 991px) {
@@ -3562,6 +3709,9 @@ path:hover {
   }
 }
 @media screen and (max-width: 910px) {
+  .accordion-item-header {
+    font-size: 14px;
+  }
   .benefits__item:hover .benefits__img:before {
     opacity: 1;
   }
@@ -3601,6 +3751,12 @@ path:hover {
   }
 }
 @media screen and (max-width: 767px) {
+  .accordion-item-header {
+    font-size: 14px;
+  }
+  .vacancies__feedback {
+    display: none;
+  }
   .vacancies__btn {
     font-size: 22.8px;
     height: 104px;
@@ -3917,6 +4073,9 @@ path:hover {
     height: 80px;
   }
   #svg-map {
+    display: none;
+  }
+  .vacancies__feedback {
     display: none;
   }
 }
@@ -4345,6 +4504,9 @@ path:hover {
     font-size: 38px;
   }
   #svg-map {
+    display: none;
+  }
+  #feedback {
     display: none;
   }
 }
