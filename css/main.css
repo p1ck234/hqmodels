@@ -802,62 +802,24 @@ path:hover {
   );
 }
 #containerphoto {
-  width: 1000;
+  width: 1000px; /* Добавлено px для единиц измерения */
   overflow: hidden;
   margin: 50px auto;
   background: transparent;
 }
+
 .photobanner {
   height: 560px;
   width: 4723px;
   margin-bottom: 80px;
   margin-left: 400px;
 }
+
 .first {
-  -webkit-animation: bannermove 30s linear infinite;
-  -moz-animation: bannermove 30s linear infinite;
-  -ms-animation: bannermove 30s linear infinite;
-  -o-animation: bannermove 30s linear infinite;
   animation: bannermove 30s linear infinite;
 }
 
-@keyframes "bannermove" {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: -3728px;
-  }
-}
-
-@-moz-keyframes bannermove {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: -3728px;
-  }
-}
-
-@-webkit-keyframes "bannermove" {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: -3728px;
-  }
-}
-
-@-ms-keyframes "bannermove" {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: -3728px;
-  }
-}
-
-@-o-keyframes "bannermove" {
+@keyframes bannermove {
   0% {
     margin-left: 0px;
   }
@@ -867,26 +829,16 @@ path:hover {
 }
 
 .photobanner img {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.1s ease;
 }
 
 .photobanner img:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
   transform: scale(1.1);
   cursor: pointer;
   transition: all 0.5s ease;
-
-  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
+
 .benefits__block:before {
   background: url("../img/logo4.png") center no-repeat;
   background-size: 100%;
@@ -3839,7 +3791,7 @@ path:hover {
 }
 @media screen and (max-width: 767px) {
   .accordion-item-header {
-    line-height: 1.9rem
+    line-height: 1.9rem;
   }
   .vacancies__feedback {
     display: none;
@@ -4532,18 +4484,18 @@ path:hover {
     display: none;
   }
   .accordion-item-header {
-    font-size: 1.2rem
+    font-size: 1.2rem;
   }
   .accordion-item-body-content {
-    font-size: 1.2rem
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 360px) {
   .accordion-item-header {
-    font-size: 1.2rem
+    font-size: 1.2rem;
   }
   .accordion-item-body-content {
-    font-size: 1.2rem
+    font-size: 1.2rem;
   }
   .modal-body {
     padding: 39px;
