@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>HQ Models</title>
+
+    <style>
+      .oh {
+        overflow: hidden;
+      }
+
+      .dn {
+        display: none;
+      }
+
+      .preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1999;
+        background: #fff;
+        -webkit-transition: all 0.6s ease 0s;
+        -moz-transition: all 0.6s ease 0s;
+        -o-transition: all 0.6s ease 0s;
+        transition: all 0.6s ease 0s;
+      }
+
+      .preloader.done {
+        opacity: 0;
+      }
+    </style>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css?ver=1.01" />
+    <link rel="stylesheet" href="css/font-awesome.min.css?ver=1.01" />
+    <link rel="stylesheet" href="css/animate.min.css?ver=1.01" />
+    <link rel="stylesheet" href="css/main.css?ver=1.25" />
+
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HQ Models" />
+    <meta
+      property="og:description"
+      content="Хочешь зарабатывать деньги легко и интересно? Делай это с нами! :)"
+    />
+    <meta property="og:url" content="http://hqmodels.ru/" />
+    <meta property="og:site_name" content="HQ Models" />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="http://hqmodels.ru/img/img10.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="http://hqmodels.ru/img/img10.jpg" />
+
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="img/favicon/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="img/favicon/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="img/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="img/favicon/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="img/favicon/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="img/favicon/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="img/favicon/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="img/favicon/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta
+      name="msapplication-TileImage"
+      content="img/favicon/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="img/favicon/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="img/favicon/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="img/favicon/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="img/favicon/mstile-310x310.png"
+    />
+  </head>
+
+  <body>
+    <div class="preloader" id="preloader">
+      <noscript><span>Please enable JavaScript in your browser</span></noscript>
+    </div>
+
+    <script>
+      setTimeout(function () {
+        var preloader = document.getElementById("preloader");
+        var html = document.getElementById("html");
+        if (!preloader.classList.contains("done")) {
+          preloader.classList.add("done");
+          html.classList.remove("oh");
+          setTimeout(function () {
+            preloader.classList.add("dn");
+          }, 300);
+        }
+      }, 300);
+    </script>
+
+    <a href="#" class="btn top__btn" data-toggle="modal" data-target="#modal"
+      ><span
+        >Заявка
+        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span
+    ></a>
+    <div class="menu hidden-sm hidden-md hidden-lg">
+      <img src="img/logo.png" class="menu__logo visible-xs" alt="" />
+      <a href="/index.html#about-us" class="menu__item scrollto">Кто мы</a>
+      <a href="/index.html#benefits" class="menu__item scrollto"
+        >Преимущества</a
+      >
+      <a href="/index.html#conditions" class="menu__item scrollto">Условия</a>
+      <a href="/index.html#duties" class="menu__item scrollto">О работе</a>
+      <a href="/index.html#vacancies" class="menu__item scrollto">Вакансии</a>
+      <a href="/index.html#faq" class="menu__item scrollto">FAQ</a>
+      <a href="#feedback" class="menu__item menu--last scrollto">Отзывы</a>
+      <a
+        href="#"
+        class="btn menu__request-btn visible-xs"
+        data-toggle="modal"
+        data-target="#modal"
+        ><span
+          >Заявка
+          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span
+      ></a>
+    </div>
+    <a href="#" class="menu-btn">
+      <span class="menu-btn__line menu-btn--line1"></span>
+      <span class="menu-btn__line menu-btn--line2"></span>
+      <span class="menu-btn__line menu-btn--line3"></span>
+    </a>
+    <section
+      class="intro scrollme animateme"
+      data-when="span"
+      data-from="0"
+      data-to="1"
+      data-opacity="0"
+      data-translatey="-500"
+    >
+      <div class="container intro__container">
+        <a href="/"><img src="img/logo.png" class="intro__logo" alt="" /></a>
+
+        <div class="menu hidden-xs">
+          <img src="img/logo.png" class="menu__logo visible-xs" alt="" />
+          <a href="/index.html#about-us" class="menu__item scrollto">Кто мы</a>
+          <a href="/index.html#benefits" class="menu__item scrollto"
+            >Преимущества</a
+          >
+          <a href="/index.html#conditions" class="menu__item scrollto"
+            >Условия</a
+          >
+          <a href="/index.html#duties" class="menu__item scrollto">О работе</a>
+          <a href="/index.html#vacancies" class="menu__item menu--last scrollto"
+            >Вакансии</a
+          >
+          <a href="#feedback" class="menu__item menu--last scrollto">Отзывы</a>
+          <a href="/index.html#faq" class="menu__item menu--last scrollto"
+            >FAQ</a
+          >
+          <a
+            href="#"
+            class="btn menu__request-btn visible-xs"
+            data-toggle="modal"
+            data-target="#modal"
+            ><span
+              >Заявка
+              <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span
+          ></a>
+        </div>
+
+        <p class="intro__p">
+          Хочешь зарабатывать деньги <span class="intro__span">легко</span> и
+          <span class="oh"><span class="intro__span">интересно</span>?</span>
+        </p>
+        <p class="intro__p2 s2">
+          <span class="c-fcd5ef">Д</span><span class="c-fbd6ee">е</span
+          ><span class="c-fbd7ed">л</span><span class="c-fad8ed">а</span
+          ><span class="c-fad9ec">й</span> <span class="c-f8daeb">э</span
+          ><span class="c-f7dbea">т</span><span class="c-f7dcea">о</span>
+          <span class="c-f6dee8">с</span> <span class="c-f5dfe7">н</span
+          ><span class="c-f4e0e6">а</span><span class="c-f3e0e6">м</span
+          ><span class="c-f2e2e5">и</span><span class="c-f2e3e4">!</span>
+          <span class="c-f1e4e4">:</span><span class="c-f1e5e3">)</span>
+        </p>
+        <p class="intro__p2 s1">
+          <a
+            href="#"
+            class="btn intro__btn"
+            data-toggle="modal"
+            data-target="#modal"
+            ><span
+              >Хочу!
+              <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span
+          ></a>
+        </p>
+      </div>
+      <a href="#feedback" class="intro__scroll-down scrollto"
+        ><i class="fa fa-angle-double-down intro__ico" aria-hidden="true"></i
+      ></a>
+      <div class="intro__gradient"></div>
+    </section>
+
+    <section class="vacancies vacancies__feedback" id="feedback">
+      <div class="vacancies__line"></div>
+      <div class="vacancies__circle1"></div>
+      <div class="vacancies__circle2"></div>
+      <div class="vacancies__circle3"></div>
+      <div class="vacancies__circle4"></div>
+      <div class="container">
+        <h2 class="vacancies__h2">
+          <span class="c-ff869d">О</span><span class="c-ff93b7">т</span
+          ><span class="c-ff9bc9">з</span><span class="c-fda6da">ы</span
+          ><span class="c-f6acdf">в</span><span class="c-ebb0d9">ы</span>
+        </h2>
+        <div class="album">
+          <div class="responsive-container-block bg">
+            <div class="responsive-container-block img-cont">
+              <img class="img" src="https://i.ibb.co/tPWrLjk/feedback-4.jpg" />
+              <img class="img" src="https://i.ibb.co/SBKrTFw/feedback-5.jpg" />
+              <img class="img" src="https://i.ibb.co/0Yt15Jp/feedback-1.jpg" />
+            </div>
+            <div class="responsive-container-block img-cont">
+              <img
+                class="img img-big"
+                src="https://i.ibb.co/vQtDG4S/feedback-6.jpg"
+              />
+              <img
+                class="img img-big img-last"
+                src="https://i.ibb.co/jkmv6db/feedback-7.jpg"
+              />
+            </div>
+            <div class="responsive-container-block img-cont">
+              <img
+                class="img img-big"
+                src="https://i.ibb.co/XS1V9Hy/photo-2024-05-15-17-47-56.jpg"
+              />
+              <img
+                class="img img-big"
+                src="https://i.ibb.co/MnkpPDW/photo-2024-05-15-17-49-54.jpg"
+              />
+              <img
+                class="img img-big"
+                src="https://i.ibb.co/YZG3NXn/photo-2024-05-15-17-56-24.jpg"
+              />
+              <img
+                class="img img-big img-last"
+                src="https://i.ibb.co/zh4Hy2D/feedback-3.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__circle3 hidden-md hidden-sm hidden-xs"></div>
+      <div class="footer__circle4 hidden-md hidden-sm hidden-xs"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 footer__col-left">
+            <div class="footer__logo2 visible-md visible-sm visible-xs">
+              <img src="img/logo3.png" class="footer__img" alt="" />Models
+            </div>
+            <p class="footer__contact footer--mod">
+              <i class="fa fa-envelope footer__ico" aria-hidden="true"></i> По
+              всем вопросам:
+            </p>
+            <p class="footer__contact">
+              <a href="mailto: job@hqmodels.studio" class="footer__mail"
+                >job@hqmodels.studio</a
+              >
+            </p>
+            <p class="footer__social">
+              <!-- <a href="#" target="_blank" class="footer__soc-btn"
+                  ><i class="fa fa-vk" aria-hidden="true"></i
+                ></a> -->
+              <a
+                href="https://www.instagram.com/hqmodels_/"
+                target="_blank"
+                class="footer__soc-btn"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://t.me/hqmodelsstudio"
+                target="_blank"
+                class="footer__soc-btn footer--big"
+                ><i class="fa fa-telegram" aria-hidden="true"></i
+              ></a>
+            </p>
+          </div>
+          <div class="col-lg-4 footer__col-center">
+            <div class="footer__circle3 hidden-lg"></div>
+            <div class="footer__circle4 hidden-lg"></div>
+            <div class="footer__circle">
+              <div class="footer__circle2">
+                <img src="img/logo2.png" class="footer__logo" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 footer__col-right">
+            <div class="footer__logo2 hidden-md hidden-sm hidden-xs">
+              <img src="img/logo3.png" class="footer__img" alt="" />Models
+            </div>
+            <a href="/index.html#about-us" class="footer__link scrollto"
+              >Кто мы?</a
+            >
+            <a
+              href="/index.html#benefits"
+              class="footer__link scrollto footer--long"
+              >Преимущества</a
+            >
+            <a href="/index.html#conditions" class="footer__link scrollto"
+              >Условия</a
+            >
+            <a href="/index.html#duties" class="footer__link scrollto"
+              >О работе</a
+            >
+            <a
+              href="/index.html#vacancies"
+              class="footer__link scrollto footer--long2"
+              >Вакансии</a
+            >
+            <a href="#feedback" class="footer__link scrollto footer--long4"
+              >Отзывы</a
+            >
+            <a
+              href="/index.html#faq"
+              class="footer__link scrollto footer--long4"
+              >FAQ</a
+            >
+            <p class="footer__copyright">
+              © 2024 hqmodels.studio - All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="mainForm">
+              <h3 class="modal__h3">Запись на собеседование</h3>
+              <p class="modal__p">
+                Мы свяжемся с вами в течение <span class="b">24 часов</span> с
+                момента подачи заявки
+              </p>
+              <input
+                type="text"
+                class="form-control modal__input"
+                id="name"
+                name="name"
+                placeholder="Имя"
+                required
+              />
+              <input
+                type="text"
+                class="form-control modal__input"
+                id="phone"
+                name="phone"
+                placeholder="Номер телефона"
+                required
+              />
+              <input
+                type="text"
+                class="form-control modal__input"
+                id="social"
+                name="social"
+                placeholder="Ссылка на соцсеть"
+                required
+              />
+              <select
+                class="form-control modal__input modal--select"
+                id="vacancy"
+                name="vacancy"
+                required
+              >
+                <option disabled selected value="Вакансия">Вакансия</option>
+                <option value="модель">Ведущая прямых трансляций</option>
+                <option value="спамер">Рекрутер</option>
+                <option value="набор персонала">
+                  Агент по набору персонала
+                </option>
+                <option value="менеджер">Менеджер студии</option>
+              </select>
+              <select
+                class="form-control modal__input modal--select"
+                id="city"
+                name="city"
+                required
+              >
+                <option disabled selected value="Город">Город</option>
+                <option value="Саратов">Саратов</option>
+                <option value="Саратов">Самара</option>
+                <option value="Пенза">Пенза</option>
+                <option value="Саратов">Нижний Новгород</option>
+                <option value="Саратов">Калининград</option>
+                <option value="Воронеж">Воронеж</option>
+                <option value="Дзержинск">Дзержинск</option>
+              </select>
+              <button type="submit" class="btn modal__btn">
+                <span
+                  >Отправить
+                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i
+                ></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js?ver=1.01"></script>
+    <script src="js/bootstrap.min.js?ver=1.01"></script>
+    <script src="js/jquery.scrollme.min.js?ver=1.01"></script>
+    <script src="js/jquery.appear.min.js?ver=1.01"></script>
+    <script src="js/main.js?ver=1.01"></script>
+    <script src="//code.jivosite.com/widget/t4IugUqoYP" async></script>
+  </body>
+</html>
