@@ -238,3 +238,16 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
     }
   });
 });
+
+// Select all divs with class 'vacancies__item'
+const vacanciesItems = document.querySelectorAll(".feedback");
+
+// Loop through each div and add click event listener
+vacanciesItems.forEach(function (item) {
+  item.addEventListener("click", function () {
+    // Get the URL from the data-url attribute
+    const url = item.getAttribute("data-url");
+    // Open the URL in a new window/tab
+    window.open(url, "_blank");
+  });
+});

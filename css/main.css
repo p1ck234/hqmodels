@@ -1781,12 +1781,25 @@ path:hover {
   color: #ff42ac;
   margin-bottom: 30px;
 }
+.feedback__h3 {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 900;
+  text-decoration: underline;
+  color: #ff42ac;
+}
 .vacancies__p {
   font-size: 21px;
   line-height: 30px;
   margin-bottom: 25px;
 }
-.vacancies__item:hover .vacancies__h3 {
+.feedback__p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  margin: 0 0 0 0;
+}
+.vacancies__item:hover .vacancies__h3 .feedback__h3 {
   color: #ff42ac;
 }
 .vacancies__col-left {
