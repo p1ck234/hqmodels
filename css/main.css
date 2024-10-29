@@ -946,7 +946,7 @@ path:hover {
 }
 
 .album .img {
-  width: 100%;
+  width: 85%;
   margin: 0 0 20px 0;
 }
 
@@ -3112,6 +3112,41 @@ path:hover {
 .vacancies__img {
   height: 218px;
 }
+.telegram-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #92dfe3;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #92dfe3;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-right: 180px;
+}
+
+.telegram-button:hover {
+  background-color: #ff869d;
+}
+
+.telegram-button span {
+  display: block;
+  font-size: 26px;
+  text-shadow: 1px 1px 2px #ff9bc9; /* Обводка для текста */
+}
+
+.telegram-button strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #cd5fb8;
+}
+
+.feedback__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 1850px) {
   .about-us__line,
   .benefits__line,
@@ -3256,6 +3291,9 @@ path:hover {
   }
 }
 @media screen and (max-width: 1400px) {
+  .telegram-button {
+    margin-right: 0;
+  }
   .benefits__col-left {
     width: 241px;
   }
@@ -3281,6 +3319,9 @@ path:hover {
   }
 }
 @media screen and (max-width: 1300px) {
+  .telegram-button {
+    margin-right: 0;
+  }
   .vacancies__btn {
     font-size: 19px;
   }
@@ -3616,6 +3657,9 @@ path:hover {
   }
 }
 @media screen and (max-width: 1100px) {
+  .telegram-button {
+    margin-right: 0;
+  }
   .benefits__img {
     height: 290px;
   }
@@ -3691,6 +3735,12 @@ path:hover {
   }
 }
 @media screen and (max-width: 910px) {
+  .album .img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
   .accordion-item-header {
     font-size: 1.9rem;
   }
@@ -3734,8 +3784,16 @@ path:hover {
 }
 @media screen and (max-width: 767px) {
   .album .img {
-    max-width: 32.5%;
-    margin: 0 0 0 0;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .album .responsive-container-block {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .album .responsive-container-block.img-cont {
+    padding: 0px 0px 0px 0px;
   }
 
   .album .responsive-container-block.bg {
@@ -4064,6 +4122,18 @@ path:hover {
   }
 }
 @media screen and (max-width: 600px) {
+  .album .img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .album .responsive-container-block {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .album .responsive-container-block.img-cont {
+    padding: 0px 0px 0px 0px;
+  }
   .conditions__item {
     min-height: 200px;
   }
@@ -4076,19 +4146,27 @@ path:hover {
   }
 }
 @media screen and (max-width: 500px) {
-  .album .img {
-    max-width: 94%;
-    margin: 0 0 25px 0;
+  .telegram-button {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
-
+  .album .img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .album .responsive-container-block {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .album .responsive-container-block.img-cont {
     flex-direction: column;
     align-items: center;
-    padding: 10px 10px 10px 10px;
+    padding: 0px 0px 0px 0px;
   }
 
   .album .img.img-big {
-    max-width: 94%;
+    max-width: 92%;
     margin: 0 0 25px 0;
   }
 
@@ -4468,6 +4546,21 @@ path:hover {
   }
 }
 @media screen and (max-width: 360px) {
+  .telegram-button {
+    margin-right: 0;
+  }
+  .album .img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .album .responsive-container-block {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .album .responsive-container-block.img-cont {
+    padding: 0px 0px 0px 0px;
+  }
   .accordion-item-header {
     font-size: 1.2rem;
   }
