@@ -3791,6 +3791,12 @@ path:hover {
   #svg-map {
     display: none;
   }
+  .circle1 {
+    margin-bottom: 672px;
+  }
+  .circle__feedback {
+    margin-bottom: 1064px;
+  }
 }
 @media screen and (max-width: 767px) {
   .album .img {
@@ -4554,6 +4560,9 @@ path:hover {
   .accordion-item-body-content {
     font-size: 1.2rem;
   }
+  .circle__feedback {
+    margin-bottom: 3152px;
+  }
 }
 @media screen and (max-width: 360px) {
   .telegram-button {
@@ -4593,11 +4602,22 @@ path:hover {
   #svg-map {
     display: none;
   }
-}
-
-@media screen and (max-width: 321px) {
   .circle1 {
     margin-bottom: 480px;
+  }
+  .circle__feedback {
+    margin-bottom: 2637px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .circle1 {
+    margin-bottom: 480px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .circle__feedback {
+    margin-bottom: 2721px;
   }
 }
 
