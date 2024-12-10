@@ -1562,6 +1562,9 @@ path:hover {
   position: relative;
   overflow: hidden;
 }
+.vacancies__faq {
+  padding-top: 50px;
+}
 .vacancies__line {
   background: #cc5098;
   width: 155px;
@@ -1950,6 +1953,7 @@ path:hover {
 .vacancies__circle1 {
   width: 1417px;
   height: 1417px;
+  margin-bottom: 20px;
   background: -moz-linear-gradient(
     45deg,
     rgba(225, 95, 255, 1) 0%,
@@ -2002,6 +2006,12 @@ path:hover {
   margin-left: auto;
   margin-right: auto;
   opacity: 0.5;
+}
+.circle1 {
+  margin-bottom: 650px;
+}
+.circle__feedback {
+  margin-bottom: 1605px;
 }
 .vacancies__circle2 {
   width: 542px;
@@ -4584,6 +4594,7 @@ path:hover {
     display: none;
   }
 }
+
 @media screen and (min-width: 501px) and (max-height: 860px) {
   .modal__btn {
     margin-top: 24px;

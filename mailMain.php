@@ -1,6 +1,6 @@
 <?php
     // Email sending setup
-    $to = 'job@hqmodels.studio';
+    $to = 'job@hqfamily.ru';
     $subject = '[Заявка]';
     $message = '
         <html>
