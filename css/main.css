@@ -2008,7 +2008,7 @@ path:hover {
   opacity: 0.5;
 }
 .circle1 {
-  margin-bottom: 650px;
+  margin-bottom: 530px;
 }
 .circle__feedback {
   margin-bottom: 1605px;
@@ -3792,7 +3792,7 @@ path:hover {
     display: none;
   }
   .circle1 {
-    margin-bottom: 672px;
+    margin-bottom: 552px;
   }
   .circle__feedback {
     margin-bottom: 1064px;
@@ -4563,6 +4563,12 @@ path:hover {
   .circle__feedback {
     margin-bottom: 3152px;
   }
+  .accordion-item-header {
+    font-size: 16px;
+  }
+  .accordion-item-body {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 360px) {
   .telegram-button {
@@ -4603,16 +4609,22 @@ path:hover {
     display: none;
   }
   .circle1 {
-    margin-bottom: 480px;
+    margin-bottom: 380px;
   }
   .circle__feedback {
     margin-bottom: 2637px;
+  }
+  .accordion-item-header {
+    font-size: 16px;
+  }
+  .accordion-item-body {
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 499px) {
   .circle1 {
-    margin-bottom: 480px;
+    margin-bottom: 380px;
   }
 }
 @media screen and (max-width: 375px) {
