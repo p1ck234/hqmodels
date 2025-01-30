@@ -946,7 +946,7 @@ path:hover {
 }
 
 .album .img {
-  width: 100%;
+  width: 85%;
   margin: 0 0 20px 0;
 }
 
@@ -1562,6 +1562,9 @@ path:hover {
   position: relative;
   overflow: hidden;
 }
+.vacancies__faq {
+  padding-top: 50px;
+}
 .vacancies__line {
   background: #cc5098;
   width: 155px;
@@ -1950,6 +1953,7 @@ path:hover {
 .vacancies__circle1 {
   width: 1417px;
   height: 1417px;
+  margin-bottom: 20px;
   background: -moz-linear-gradient(
     45deg,
     rgba(225, 95, 255, 1) 0%,
@@ -2002,6 +2006,12 @@ path:hover {
   margin-left: auto;
   margin-right: auto;
   opacity: 0.5;
+}
+.circle1 {
+  margin-bottom: 530px;
+}
+.circle__feedback {
+  margin-bottom: 1605px;
 }
 .vacancies__circle2 {
   width: 542px;
@@ -2749,6 +2759,7 @@ path:hover {
   padding-left: 50px;
   padding-right: 50px;
 }
+
 .modal__input:focus,
 .modal__input:active {
   background: #ffffbd;
@@ -2756,9 +2767,9 @@ path:hover {
   box-shadow: inset 0px 0px 20px rgba(226, 69, 160, 0.5);
   border: none;
 }
-.modal--select {
+/* .modal--select {
   border-radius: 30px 0 0 30px;
-}
+} */
 .close {
   float: none;
   font-size: 21px;
@@ -3112,6 +3123,41 @@ path:hover {
 .vacancies__img {
   height: 218px;
 }
+.telegram-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #92dfe3;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #92dfe3;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-right: 180px;
+}
+
+.telegram-button:hover {
+  background-color: #ff869d;
+}
+
+.telegram-button span {
+  display: block;
+  font-size: 26px;
+  text-shadow: 1px 1px 2px #ff9bc9; /* Обводка для текста */
+}
+
+.telegram-button strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #cd5fb8;
+}
+
+.feedback__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 1850px) {
   .about-us__line,
   .benefits__line,
@@ -3256,6 +3302,9 @@ path:hover {
   }
 }
 @media screen and (max-width: 1400px) {
+  .telegram-button {
+    margin-right: 0;
+  }
   .benefits__col-left {
     width: 241px;
   }
@@ -3281,6 +3330,9 @@ path:hover {
   }
 }
 @media screen and (max-width: 1300px) {
+  .telegram-button {
+    margin-right: 0;
+  }
   .vacancies__btn {
     font-size: 19px;
   }
@@ -3616,6 +3668,9 @@ path:hover {
   }
 }
 @media screen and (max-width: 1100px) {
+  .telegram-button {
+    margin-right: 0;
+  }
   .benefits__img {
     height: 290px;
   }
@@ -3691,6 +3746,12 @@ path:hover {
   }
 }
 @media screen and (max-width: 910px) {
+  .album .img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
   .accordion-item-header {
     font-size: 1.9rem;
   }
@@ -3731,11 +3792,25 @@ path:hover {
   #svg-map {
     display: none;
   }
+  .circle1 {
+    margin-bottom: 552px;
+  }
+  .circle__feedback {
+    margin-bottom: 1064px;
+  }
 }
 @media screen and (max-width: 767px) {
   .album .img {
-    max-width: 32.5%;
-    margin: 0 0 0 0;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .album .responsive-container-block {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .album .responsive-container-block.img-cont {
+    padding: 0px 0px 0px 0px;
   }
 
   .album .responsive-container-block.bg {
@@ -4064,6 +4139,18 @@ path:hover {
   }
 }
 @media screen and (max-width: 600px) {
+  .album .img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .album .responsive-container-block {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .album .responsive-container-block.img-cont {
+    padding: 0px 0px 0px 0px;
+  }
   .conditions__item {
     min-height: 200px;
   }
@@ -4076,19 +4163,27 @@ path:hover {
   }
 }
 @media screen and (max-width: 500px) {
-  .album .img {
-    max-width: 94%;
-    margin: 0 0 25px 0;
+  .telegram-button {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
-
+  .album .img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .album .responsive-container-block {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .album .responsive-container-block.img-cont {
     flex-direction: column;
     align-items: center;
-    padding: 10px 10px 10px 10px;
+    padding: 0px 0px 0px 0px;
   }
 
   .album .img.img-big {
-    max-width: 94%;
+    max-width: 92%;
     margin: 0 0 25px 0;
   }
 
@@ -4466,8 +4561,32 @@ path:hover {
   .accordion-item-body-content {
     font-size: 1.2rem;
   }
+  .circle__feedback {
+    margin-bottom: 3152px;
+  }
+  .accordion-item-header {
+    font-size: 16px;
+  }
+  .accordion-item-body {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 360px) {
+  .telegram-button {
+    margin-right: 0;
+  }
+  .album .img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .album .responsive-container-block {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .album .responsive-container-block.img-cont {
+    padding: 0px 0px 0px 0px;
+  }
   .accordion-item-header {
     font-size: 1.2rem;
   }
@@ -4490,7 +4609,31 @@ path:hover {
   #svg-map {
     display: none;
   }
+  .circle1 {
+    margin-bottom: 380px;
+  }
+  .circle__feedback {
+    margin-bottom: 2637px;
+  }
+  .accordion-item-header {
+    font-size: 16px;
+  }
+  .accordion-item-body {
+    font-size: 14px;
+  }
 }
+
+@media screen and (max-width: 499px) {
+  .circle1 {
+    margin-bottom: 380px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .circle__feedback {
+    margin-bottom: 2721px;
+  }
+}
+
 @media screen and (min-width: 501px) and (max-height: 860px) {
   .modal__btn {
     margin-top: 24px;
