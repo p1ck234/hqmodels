@@ -940,11 +940,11 @@ path:hover {
 }
 
 .album .responsive-container-block.bg {
-  max-width: 1320px;         /* Максимальная ширина для контейнера */
-  margin: 0 auto;            /* Выставляет контейнер по центру страницы */
+  max-width: 1320px; /* Максимальная ширина для контейнера */
+  margin: 0 auto; /* Выставляет контейнер по центру страницы */
   display: flex;
-  flex-wrap: wrap;           /* Чтобы колонки переносились на новую строку */
-  justify-content: center;   /* Горизонтальное выравнивание внутреннего контента */
+  flex-wrap: wrap; /* Чтобы колонки переносились на новую строку */
+  justify-content: center; /* Горизонтальное выравнивание внутреннего контента */
 }
 
 .album .img {
@@ -2779,6 +2779,7 @@ path:hover {
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  margin-bottom: 86px;
 }
 .video-container iframe {
   position: absolute;
