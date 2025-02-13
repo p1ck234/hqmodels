@@ -940,13 +940,15 @@ path:hover {
 }
 
 .album .responsive-container-block.bg {
-  max-width: 1320px;
-  margin: 0 0 0 0;
-  justify-content: space-between;
+  max-width: 1320px; /* Максимальная ширина для контейнера */
+  margin: 0 auto; /* Выставляет контейнер по центру страницы */
+  display: flex;
+  flex-wrap: wrap; /* Чтобы колонки переносились на новую строку */
+  justify-content: center; /* Горизонтальное выравнивание внутреннего контента */
 }
 
 .album .img {
-  width: 85%;
+  width: 100%;
   margin: 0 0 20px 0;
 }
 
@@ -2770,6 +2772,23 @@ path:hover {
 /* .modal--select {
   border-radius: 30px 0 0 30px;
 } */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-bottom: 86px;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .close {
   float: none;
   font-size: 21px;
